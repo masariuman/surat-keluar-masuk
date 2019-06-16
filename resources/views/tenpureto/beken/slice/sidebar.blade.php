@@ -21,6 +21,11 @@
             </a>
           </li>
         <li class="header">PENGATURAN</li>
+        <li class="{{ Request::is('surat-keluar') ? 'active' : '' }}">
+            <a href="{{ route('logout') }}">
+              <i class="fa fa-reply"></i> <span>LOG OUT</span>
+            </a>
+          </li>
       </ul>
     </section>
     <!-- /.sidebar -->
